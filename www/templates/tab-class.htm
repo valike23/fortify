@@ -1,0 +1,41 @@
+<ion-view view-title="Class room">
+    <ion-content class="has-header" >
+        <div class="card" style="background-color:white">
+            <div class="item ">
+                <img src="img/fortran.jpg" class="full-image" />
+                <p style="margin-top:8px" class="text-center"><strong>Symbolic Programming with FORTRAN</strong></p>
+
+            </div>
+            <div class="item item-text-wrap">
+
+                <h3>About this course</h3>
+              <p> This course is targeted at undergraduate students who are offering and introductory course to programming
+                with FORTRAN.<span style="color:blue; text-decoration:underline" ng-click="show()">see more.</span></p> 
+                <p ng-if="more">The course contains visual, text and audio elements with hand on examples and praticals to ensure participants of this 
+                course get the best out of the course.</p>
+            </div>
+        </div>
+        <div class="card list" style="background-color:white">
+          <div class="item item-divider">
+            Chapters
+          </div>
+          <div ng-repeat="group in groups">
+            <ion-item class="item-stable"
+                      ng-click="toggleGroup(group)"
+                      ng-class="{active: isGroupShown(group)}">
+              <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+              &nbsp;
+              Chapter {{group.name}}
+            </ion-item>
+            <ion-item class="item-accordion"
+                      ng-repeat="item in group.items"
+                      ng-show="isGroupShown(group)" ng-click="details(item)">
+              {{item.topic}}
+            </ion-item>
+          </div>
+          <div ng-hide="enrolled" class="item"><button class="button button-block button-balanced" ng-click="enroll()">Enroll</button></div>
+          <div ng-show="enrolled" class="item"><button class="button button-block button-balanced" ng-click="continue()">Continue</button></div>
+
+        </div>
+    </ion-content>
+</ion-view>

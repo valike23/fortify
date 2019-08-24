@@ -1,0 +1,22 @@
+﻿<ion-view view-title="Rules">
+    <ion-content>
+        <div class="pag positive-bg " style="text-align:center">
+            <!-- Colored FAB button with ripple -->
+            <button ui-sref="tab.exam" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" style="width:100px; height:100px; margin-top: 20px; border:solid 3px white; color:white">
+                start
+            </button>
+        </div>
+        <div class="list">
+            <div class="item item-divider">
+                Instructions
+
+            </div>
+            <div ng-repeat="rule in test.rules" class="item item-icon-right">
+               {{rule}}
+               <i class="icon ion-bookmark"></i>
+            </div>
+           
+        
+        </div>
+    </ion-content>
+</ion-view>

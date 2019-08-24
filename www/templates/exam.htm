@@ -1,0 +1,40 @@
+﻿<ion-view view-title="Rules">
+    <ion-content>
+        <div class="progress">
+            <div class="progress-bar " role="progressbar" id="progress" 
+                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%; height:10px">
+                
+            </div>
+        </div>
+            <div class="btn-group btn-group-xs " role="group" aria-label="..." style="padding:2px">
+                <button type="button" ng-class="{'btn btn-default': question.choice == '',
+                        'btn btn-warning': question.choice != ''}"  ng-repeat="question in questions" ng-click="fix($index)">{{$index + 1}}</button>
+            </div>
+       
+        <div on-swipe-right="right()" on-swipe-left="left()" class="card padding " style="font-size:24px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight:300; word-spacing:3px">
+            
+            {{question.question}}
+            <a class="item item-list-detail">
+                <ion-scroll direction="x">
+                    <img ng-repeat="image in question.img" ng-src="{{image}}" ng-click="img(image)" class="image-list-thumb" />
+                </ion-scroll>
+                </a>
+                <br />
+                <br />
+
+                <button id="btn1" ng-class="{'button-positive':question.choice != question.option1, 'button-energized':question.choice ==question.option1}" class="button button-block button-positive" ng-click="choose(question.option1)">{{question.option1}}</button>
+                <button id="btn2" ng-class="{'button-positive':question.choice != question.option2, 'button-energized':question.choice ==question.option2}" class="button button-block button-positive" ng-click="choose(question.option2)">{{question.option2}}</button>
+                <button id="btn3" ng-class="{'button-positive':question.choice != question.option3, 'button-energized':question.choice ==question.option3}" class="button button-block button-positive" ng-click="choose(question.option3)">{{question.option3}}</button>
+                <button id="btn4" ng-class="{'button-positive':question.choice != question.option4, 'button-energized':question.choice ==question.option4}" class="button button-block button-positive" ng-click="choose(question.option4)">{{question.option4}}</button>
+
+</div>
+        <div class="padding text-center">
+            <button class="button button-positive pull-left " ng-click="left()" ><i class="ion ion-reply"></i></button>
+            <button class="button button-balanced "ng-click="mark()">submit</button>
+            <button class="button button-positive pull-right" ng-click="right()"><i class="ion ion-forward"></i></button>
+        </div>
+       
+
+    </ion-content>
+
+</ion-view>

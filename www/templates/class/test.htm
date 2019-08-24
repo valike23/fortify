@@ -1,0 +1,24 @@
+<div class="card padding">
+  <h2>parameter statement</h2>
+  <p>Some constants appear many times in a program. It is then often desirable to define them only once, in the beginning of the program. This is what the parameter statement is for. It also makes programs more readable. For example, the circle area program should rather have been written like this:</p>
+  <code>
+    program circle<br />
+    real r, area, pi<br />
+    parameter (pi = 3.14159)<br />
+    write (*,*) 'Give radius r:'<br />
+    read (*,*) r<br />
+    area = pi*r*r<br />
+    write (*,*) 'Area = ', area<br />
+    stop<br />
+    end
+  </code>
+  <p>
+    The syntax of the parameter statement is<br />
+    <code> parameter (name = constant, ... , name = constant)</code>
+  </p>
+  <p>
+    Some good reasons to use the parameter statement are:<br/>
+    * it helps reduce the number of typos<br/>
+    * it is easy to change a constant that appears many times in a program<br/>
+  </p>
+</div>

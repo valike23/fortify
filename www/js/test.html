@@ -1,0 +1,48 @@
+<div class="card padding">
+  <h3>Multi-Dimensional Array</h3>
+  <h4>Two Dimensional Array</h4>
+  <div>
+    <p>
+      Matrices are very important in linear algebra.
+      Matrices are usually represented by two-dimensional arrays. For example, the declaration
+    </p>
+    <code>
+      <span style="color:blue">REAL</span> A(3,5)
+    </code>
+    <p>
+      defines a two-dimensional array of 3*5=15 real numbers.
+      It is useful to think of the first index as the row index, and the second as the column index.
+      Hence we get the graphical picture:
+    </p>
+    <code>
+      <pre>
+(1,1) (1,2) (1,3) (1,4) (1,5)
+(2,1) (2,2) (2,3) (2,4) (2,5)
+(3,1) (3,2) (3,3) (3,4) (3,5)
+</pre>
+    </code>
+    <p>
+      Two-dimensional arrays may also have indices in an arbitrary defined range.
+      The general syntax for declarations is:
+    </p>
+    <code>
+      <pre>
+Name (low_index1 : hi_index1, low_index2 : hi_index2)
+</pre>
+    </code>
+    <p>
+      The total size of the array is then
+    </p>
+    <code>
+      <pre>
+size = (hi_index1-low_index1+1)*(hi_index2-low_index2+1)
+</pre>
+
+    </code>
+  </div>
+  <h4>Multi Dimensional Arrays</h4>
+  <div>
+  Fortran 77 allows arrays of up to seven dimensions.
+  The syntax and storage format are analogous to the two-dimensional case, so we will not spend time on this
+  </div>
+</div>

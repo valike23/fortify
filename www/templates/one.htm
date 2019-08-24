@@ -1,0 +1,37 @@
+<ion-content class="positive-bg" style="height:100%">
+    <div class="text-center" style="margin-top:30px">
+        <img class="" src="img/icon.png" width="150"  />
+    </div>
+   
+        <div class="list " style="margin-top:90px; margin-left:10px; margin-right: 10px">
+            <label class="item item-input padding">
+                <span style="font-size:30px; margin-right:8px" class="ion ion-android-person"></span>
+                <input type="text" ng-model="fullname" placeholder="firstname and lastname" ng-minlength="8" id="full" />
+            </label>
+            <label class="item item-input padding">
+                <span style="font-size:30px; margin-right:16px" class="ion ion-man"></span>
+                <input type="text" ng-model="username" placeholder="A unique username" ng-minlength="6" id="user" />
+            </label>
+            <label class="item item-input padding">
+                <span style="font-size:30px; margin-right:8px" class="ion ion-university"></span>
+                <input type="text" ng-model="department" placeholder="department" ng-minlength="4" id="dept"/>
+            </label>
+            <label class="item item-input padding">
+                <span style="font-size:30px; margin-right:8px" class="ion ion-android-phone-portrait"></span>
+                <input type="number" ng-model="phone" placeholder="phone number" ng-minlength="11"  ng-maxlength="11" id="tel"/>
+            </label>
+           
+            <label class="item item-input padding">
+                <span style="font-size:30px; margin-right:8px" class="ion ion-android-lock"></span>
+                <input type="text" ng-model="serial" placeholder="include key if available" ng-minlength="10" ng-maxlength="10" id="key"/>
+            </label>
+            <div >
+                <button ng-click="submit()" ng-disabled="!department || !fullname || !username || !phone"
+                        class="button button-block button-balanced">
+                    Click to Begin
+                </button>
+            </div>
+        </div>
+    
+   
+</ion-content>

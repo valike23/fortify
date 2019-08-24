@@ -1,0 +1,331 @@
+/* Empty. Add your own CSS if you like */
+.item-divider{
+    font-size:20px
+}
+#avartar{
+    background-image: url('../img/ben.png'); 
+    border-radius:50%; 
+    background-size:cover;
+    height:60px;
+    width:60px;
+    margin-left:8px;
+    margin-top:4px
+}
+
+ion-content{
+    background-color:whitesmoke
+}
+
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+.house{
+    margin : 0;
+    padding : 0;
+    font-family : "Montserrat", sans-serif;
+    background-color : #333;
+}
+.metero{
+    color: white;
+  width:100%; 
+   margin-left: 15px;
+   margin-top:4px;
+   margin-bottom: 4px
+    
+    /*transform: translate(-50%, -50%);*/
+}
+.mist{
+   
+    float: left;
+    margin:4px;
+    padding: -8px;
+    cursor:pointer;
+    text-align: center;
+    position:relative;
+    text-transform: uppercase;
+    transition: 0.4s
+}
+.mist :hover{
+    transform: scale(0.9)
+}
+.mist i{
+    font-size: 36px;
+    line-height:90px;
+    opacity: 0.8;
+    margin-top:-10px
+}
+.mist span{
+    opacity: 0.8;
+    position: absolute;
+    bottom: -4px;
+    left: 6px;
+    font-size: 15px;
+    
+
+}
+.i1{
+     background-color: #ffd800;
+}
+.i2{
+     background-color: #3498db;
+}
+.i3{
+     background-color: #4cff00;
+}
+.i4{
+    background-color: #ff6a00;
+}
+.i5{
+    background-color: #0094ff;
+}
+.i6{
+    background-color: #b200ff;
+}
+.i7{
+    background-color: #ffd800;
+}
+.i8{
+    background-color: #b6ff00;
+}
+.i9{
+    background-color: #ff006e;
+}
+#past{
+    background-image:url("../img/past.jpeg")
+}
+.pag{
+    width:100%;
+    height:150px
+}
+
+.image-list-thumb {
+    padding: 2px 2px 2px 2px;
+    height: 100px;
+}
+ 
+.image-modal {
+    width: 100% !important;
+    height: 100%;
+    top: 0 !important;
+    left: 0 !important;
+}
+ 
+.transparent {
+    background: transparent !important;
+}
+ 
+.fullscreen-image {
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+ 
+.slider {
+    width: 100%;
+    height: 100%;
+}
+#toast {
+  visibility: hidden;
+  max-width: 50px;
+  height: 50px;
+  /*margin-left: -125px;*/
+  margin: auto;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  font-size: 17px;
+  white-space: nowrap;
+}
+#offline {
+  visibility: hidden;
+  max-width: 50px;
+  height: 50px;
+  /*margin-left: -125px;*/
+  margin: auto;
+  background-color: orangered;
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+  #toast #img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+    background-color: #111;
+    color: #fff;
+  }
+#offline #img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+  background-color: red;
+  color: white;
+}
+
+  #toast #desc {
+    color: #fff;
+    padding: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+#offline #desc {
+  color: white;
+  padding: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+  #toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+  }
+#offline.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes expand {
+  from {
+    min-width: 50px
+  }
+
+  to {
+    min-width: 350px
+  }
+}
+
+@keyframes expand {
+  from {
+    min-width: 50px
+  }
+
+  to {
+    min-width: 350px
+  }
+}
+
+@-webkit-keyframes stay {
+  from {
+    min-width: 350px
+  }
+
+  to {
+    min-width: 350px
+  }
+}
+
+@keyframes stay {
+  from {
+    min-width: 350px
+  }
+
+  to {
+    min-width: 350px
+  }
+}
+
+@-webkit-keyframes shrink {
+  from {
+    min-width: 350px;
+  }
+
+  to {
+    min-width: 50px;
+  }
+}
+
+@keyframes shrink {
+  from {
+    min-width: 350px;
+  }
+
+  to {
+    min-width: 50px;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 60px;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 60px;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,50 @@
+<ion-view view-title="Home" >
+  <ion-content>
+    <div class="jumbotron" style="background-image:url('img/img_1.jpg');background-size:cover; color:white">
+      <h1>Fortify</h1>
+      <p><i>Delivering classy Educational solutions....</i></p>
+    </div>
+    <div class="card">
+      <div class="list">
+        <div class="item item-avatar-left item-icon-right">
+          <img src="img/avatar2.png" />
+        {{user.name}}
+          <i class="ion ion-gear-a pull-right" style="font-size:40px; color:blue"></i>
+        </div>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="row">
+        <div class="col button">
+          <img src="img/nav/class.png" style="width:calc(100vw/4)" />
+          <p>Class</p>
+        </div>
+        <div class="col button">
+          <img src="img/nav/notification-flat.png" style="width:calc(100vw/4)" />
+          <p>Notification</p>
+        </div>
+        <div class="col button">
+          <img src="img/nav/quiz.jpg" style="width:calc(100vw/4)" />
+          <p>Quiz</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col button">
+          <img src="img/nav/profile-512.png" style="width:calc(100vw/4)" />
+          <p>Profile</p>
+        </div>
+        <div class="col button" ng-click="nav('tab.contacts')">
+          <img src="img/nav/contact1.png" style="width:calc(100vw/4)" />
+          <p>Contact</p>
+        </div>
+        <div class="col button">
+          <img src="img/nav/subscribe.png" style="width:calc(100vw/4)" />
+          <p>Subscribe</p>
+        </div>
+      </div>
+    </div>
+    <div id="toast"><div id="img"><span class="ion ion-android-notifications"></span></div><div id="desc">{{toastMessage}}</div></div>
+    <div id="offline"><div id="img"><span class="ion ion-network "></span></div><div id="desc">you are currently offline</div></div>
+
+  </ion-content>
+</ion-view>

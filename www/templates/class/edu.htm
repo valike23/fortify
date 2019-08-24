@@ -1,0 +1,96 @@
+
+<ion-view view-title="Symbolic Programminng with FORTRAN">
+
+  <ion-content>
+
+
+    <div class="row" style="width:100%;padding:0">
+      <div ng-click="fix(tutorial)" class="col btn btn-default " ng-repeat="tutorial in topic.contents"><i style="font-size:30px; color:dodgerblue" class={{tutorial.icon}}></i></div>
+
+    </div>
+    <div ng-if="choose.type == 'video'">
+      <div>
+        <video src={{choose.src}} controls style="width:100%; height: 300px" ><i class="ion ion-ios-videocam-outline"></i></video>
+        <div class="list">
+          <div class="item item-icon-left">
+            <i style="font-size:24px" class="ion ion-ios-videocam"></i>
+            {{choose.name}}
+
+          </div>
+          <div class="item item-icon-left">
+            <i style="font-size:24px" class="ion ion-clock"></i>
+            Duration
+            <span class="text-note pull-right">{{choose.duration}}</span>
+          </div>
+          <div class="item item-icon-left">
+            <i style="font-size:24px" class="ion ion-ios-play-outline"></i>
+            Size
+            <span class="text-note pull-right">{{choose.size}}</span>
+          </div>
+         
+        </div>
+      </div>
+      
+    </div>
+    <div ng-show="choose.type == 'text'" id="text" class="padding" style="font-size:18px">
+     
+    </div>
+    
+    <div ng-show="choose.type == 'quiz'" class="padding">
+      <div>
+        <button ng-if="quizButton" class="button button-block" ng-click="loadQuestions(choose)">Load Questions</button>
+        <div ng-if="!quizButton">
+          <div class="row">
+            <div class="col button button-calm" ng-click="nextQuiz($index)" ng-if="!quiz.choose" style="border:solid 4px black" ng-repeat="quiz in questions">{{$index + 1}}</div>
+            <div class="col button button-energized" ng-click="nextQuiz($index)" ng-if="quiz.choose" style="border:solid 4px black" ng-repeat="quiz in questions">{{$index + 1}}</div>
+          </div>
+          <div class="card padding">
+            <div class="row">
+              topic : {{questions[index].name}}
+            </div>
+            <div class="row">
+              quiz: {{questions[index].quiz}}
+            </div>
+            <div class="row">
+              <button class="button button-block button-calm" ng-click="assign(questions[index].opt1)" ng-if="questions[index].opt1 != questions[index].choosen"><span class="pull-left">A.</span>{{questions[index].opt1}}</button>
+              <button class="button button-block button-energized" ng-click="assign(questions[index].opt1)" ng-if="questions[index].opt1 == questions[index].choosen"><span class="pull-left">A.</span>{{questions[index].opt1}}</button>
+
+            </div>
+            <div class="row">
+              <button class="button button-block button-calm" ng-click="assign(questions[index].opt2)" ng-if="questions[index].opt2 != questions[index].choosen"><span class="pull-left">B.</span>{{questions[index].opt2}}</button>
+              <button class="button button-block button-energized" ng-click="assign(questions[index].opt2)" ng-if="questions[index].opt2 == questions[index].choosen"><span class="pull-left">B.</span>{{questions[index].opt2}}</button>
+
+            </div>
+
+            <div class="row">
+              <button class="button button-block button-calm" ng-click="assign(questions[index].opt3)" ng-if="questions[index].opt3 != questions[index].choosen"><span class="pull-left">C.</span>{{questions[index].opt3}}</button>
+              <button class="button button-block button-energized" ng-click="assign(questions[index].opt3)" ng-if="questions[index].opt3 == questions[index].choosen"><span class="pull-left">C.</span>{{questions[index].opt3}}</button>
+
+            </div>
+
+            <div class="row">
+              <button class="button button-block button-calm" ng-click="assign(questions[index].opt4)" ng-if="questions[index].opt4 != questions[index].choosen"><span class="pull-left">D.</span>{{questions[index].opt4}}</button>
+              <button class="button button-block button-energized" ng-click="assign(questions[index].opt4)" ng-if="questions[index].opt4 == questions[index].choosen"><span class="pull-left">D.</span>{{questions[index].opt4}}</button>
+
+            </div>
+            <br/>
+            <br />
+            <br />
+            <button class="button button-positive button-block" ng-click="submitQuestions()">submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="" >
+      <button class="button button-balanced button-block" ng-click="next()">
+        {{nextTopicName}}
+      </button></div>
+  
+    <!--<div class="pull-right">
+      <button class="button button-assertive" ng-click="toast()">Show Toast</button>
+    </div>-->
+   
+
+   
+  </ion-content>
+</ion-view>
