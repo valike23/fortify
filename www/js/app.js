@@ -70,7 +70,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
 .config(function($stateProvider, $urlRouterProvider, $sceDelegateProvider) {
     $sceDelegateProvider.resourceUrlWhitelist([
-      "http://localhost:100/**"
+      "https://fortifyme.herokuapp.com/**"
     ])
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router

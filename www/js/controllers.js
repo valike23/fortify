@@ -48,7 +48,7 @@ angular.module('starter.controllers', [])
             $ionicLoading.show({
               template: ` <div class="ld ld-hourglass ld-spin-fast" style="font-size:64px;color:#8da"></div>`
             });
-            $http.post("http://localhost:100/user", data).then(function (res) {
+            $http.post("https://fortifyme.herokuapp.com/user", data).then(function (res) {
               $ionicLoading.hide();
               localStorage.setItem("user", JSON.stringify(data));
               console.log(res)
@@ -318,7 +318,7 @@ angular.module('starter.controllers', [])
       $ionicLoading.show({
         template: ` <div class="ld ld-hourglass ld-spin-fast" style="font-size:64px;color:#8da"></div>`
       });
-      $http.get("http://localhost:100/questions/" + choose.name).then(function (res) {
+      $http.get("https://fortifyme.herokuapp.com/questions/" + choose.name).then(function (res) {
         $ionicLoading.hide();
         console.log(res.data);
         $scope.index = 0;
@@ -466,7 +466,7 @@ Fortran is a general purpose programming language, mainly intended for mathemati
               "type": "video",
               "size": "6.49MB",
               "duration": "5:42",
-              "src": "http://localhost:100/lib/videos/ch1_T2_history_of_fortran.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/ch1_T2_history_of_fortran.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -477,7 +477,7 @@ Fortran is a general purpose programming language, mainly intended for mathemati
               "type": "video",
               "size": "1.93MB",
               "duration" : "3:09",
-              "src": "http://localhost:100/lib/videos/FORCE2.0.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/FORCE2.0.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -506,7 +506,7 @@ Fortran is a general purpose programming language, mainly intended for mathemati
               "name": "Complier, Interpreter, and FORTRAN",
               "type": "video",
               "size": "4.57MB",
-              "src": "http://localhost:100/lib/videos/complier and interpreter.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/complier and interpreter.mp4",
               "done": false,
               "duration": "5:13",
               "subtitle": "some text to be shown later on",
@@ -554,7 +554,7 @@ Fortran is a general purpose programming language, mainly intended for mathemati
               "type": "video",
               "size": "9.32MB",
               "duration": "15:15",
-              "src": "http://localhost:100/lib/videos/learning_the_alphabets.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/learning_the_alphabets.mp4",
               "done": false,
               "icon": "ion ion-videocamera"
             },
@@ -632,7 +632,7 @@ Fortran is a general purpose programming language, mainly intended for mathemati
               "type": "video",
               "size": "6.52 MB",
               "duration": "9:04",
-              "src": "http://localhost:100/lib/videos/UNDERSTANDING_VARIABLES.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/UNDERSTANDING_VARIABLES.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -643,7 +643,7 @@ Fortran is a general purpose programming language, mainly intended for mathemati
               "type": "video",
               "size": "5.75MB",
               "duration":"6:31",
-              "src": "http://localhost:100/lib/videos/DATATYES_IN_FORTRAN.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/DATATYES_IN_FORTRAN.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -673,7 +673,7 @@ Fortran is a general purpose programming language, mainly intended for mathemati
               "type": "video",
               "size": "1.53MB",
               "duration": "3:03",
-              "src": "http://localhost:100/lib/videos/expressions_in_fortran.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/expressions_in_fortran.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -718,7 +718,7 @@ Fortran is a general purpose programming language, mainly intended for mathemati
               "type": "video",
               "size": "9.15MB",
               "duration": "11:10",
-              "src": "http://localhost:100/lib/videos/BODMASmp4.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/BODMASmp4.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -874,7 +874,7 @@ B = A <span style="color:blue">.AND.</span> 3 <span style="color:blue">.LT.</spa
               "name": "Relational Expressions",
               "type": "video",
               "size": "4.42 mb",
-              "src": "http://localhost:100/lib/videos/RELATIONAL_EXP.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/RELATIONAL_EXP.mp4",
               "done": false,
               "duration": "7:42",
               "subtitle": "some text to be shown later on",
@@ -886,7 +886,7 @@ B = A <span style="color:blue">.AND.</span> 3 <span style="color:blue">.LT.</spa
               "type": "video",
               "size": "8.59 MB",
               "duration" : "6:29",
-              "src": "http://localhost:100/lib/videos/LOGICAL_OP.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/LOGICAL_OP.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -924,7 +924,7 @@ B = A <span style="color:blue">.AND.</span> 3 <span style="color:blue">.LT.</spa
               "type": "video",
               "size": "5.56 MB",
               "duration": "3:08",
-              "src": "http://localhost:100/lib/videos/selectional_statement.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/selectional_statement.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -935,7 +935,7 @@ B = A <span style="color:blue">.AND.</span> 3 <span style="color:blue">.LT.</spa
               "type": "video",
               "size": "12.1 MB",
               "duration": "7:51",
-              "src": "http://localhost:100/lib/videos/COMPUTED_GOTO.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/COMPUTED_GOTO.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -946,7 +946,7 @@ B = A <span style="color:blue">.AND.</span> 3 <span style="color:blue">.LT.</spa
               "type": "video",
               "size": "12.0 MB",
               "duration": "7:54",
-              "src": "http://localhost:100/lib/videos/ARITHMETIC_IF.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/ARITHMETIC_IF.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -975,7 +975,7 @@ B = A <span style="color:blue">.AND.</span> 3 <span style="color:blue">.LT.</spa
               "type": "video",
               "size": "3.99 MB",
               "duration": "3:21",
-              "src": "http://localhost:100/lib/videos/LOGICAL_IF.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/LOGICAL_IF.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -986,7 +986,7 @@ B = A <span style="color:blue">.AND.</span> 3 <span style="color:blue">.LT.</spa
               "type": "video",
               "size": "13.3 MB",
               "duration": "7:36",
-              "src": "http://localhost:100/lib/videos/BLOCK_IF.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/BLOCK_IF.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -1101,7 +1101,7 @@ endif
               "type": "video",
               "size": "19.1 MB",
               "duration": "12.13",
-              "src": "http://localhost:100/lib/videos/DO_LOOP.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/DO_LOOP.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -1112,7 +1112,7 @@ endif
               "type": "video",
               "size": "14.4 MB",
               "duration": "7:11",
-              "src": "http://localhost:100/lib/videos/DO_WHILE.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/DO_WHILE.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -1123,7 +1123,7 @@ endif
               "type": "video",
               "size": "5.34 MB",
               "duration": "5:05",
-              "src": "http://localhost:100/lib/videos/nesting.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/nesting.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -1164,7 +1164,7 @@ endif
               "type": "video",
               "size": "6.52 MB",
               "duration": "9:04",
-              "src": "http://localhost:100/lib/videos/UNDERSTANDING_VARIABLES.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/UNDERSTANDING_VARIABLES.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -1175,7 +1175,7 @@ endif
               "type": "video",
               "size": "5.75MB",
               "duration": "6:31",
-              "src": "http://localhost:100/lib/videos/DATATYES_IN_FORTRAN.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/DATATYES_IN_FORTRAN.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -1205,7 +1205,7 @@ endif
               "type": "video",
               "size": "2.92MB",
               "duration": "5:08",
-              "src": "http://localhost:100/lib/videos/MULTI_DEMENSION.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/MULTI_DEMENSION.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -1218,7 +1218,7 @@ endif
               "type": "video",
               "size": "12.9MB",
               "duration": "5:36",
-              "src": "http://localhost:100/lib/videos/BODMASmp4.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/BODMASmp4.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -1229,7 +1229,7 @@ endif
               "type": "video",
               "size": "12.9MB",
               "duration": "9:48",
-              "src": "http://localhost:100/lib/videos/ARRAY_IMPLIED.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/ARRAY_IMPLIED.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -1319,7 +1319,7 @@ size = (hi_index1-low_index1+1)*(hi_index2-low_index2+1)
               "name": "Introduction to Subprograms",
               "type": "video",
               "size": "4.48 mb",
-              "src": "http://localhost:100/lib/videos/subprograms.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/subprograms.mp4",
               "done": false,
               "duration": "4:16",
               "subtitle": "some text to be shown later on",
@@ -1331,7 +1331,7 @@ size = (hi_index1-low_index1+1)*(hi_index2-low_index2+1)
               "type": "video",
               "size": "12.1 MB",
               "duration": "11:19",
-              "src": "http://localhost:100/lib/videos/INBUILT&ARTH_FUN.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/INBUILT&ARTH_FUN.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -1342,7 +1342,7 @@ size = (hi_index1-low_index1+1)*(hi_index2-low_index2+1)
               "type": "video",
               "size": "10.9 MB",
               "duration": "6:23",
-              "src": "http://localhost:100/lib/videos/FUNCTIONS.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/FUNCTIONS.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
@@ -1353,7 +1353,7 @@ size = (hi_index1-low_index1+1)*(hi_index2-low_index2+1)
               "type": "video",
               "size": "10.9 MB",
               "duration": "8:32",
-              "src": "http://localhost:100/lib/videos/SUBROUTINES.mp4",
+              "src": "https://fortifyme.herokuapp.com/lib/videos/SUBROUTINES.mp4",
               "done": false,
               "subtitle": "some text to be shown later on",
               "icon": "ion ion-videocamera"
